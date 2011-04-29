@@ -1,0 +1,11 @@
+#N canvas 214 262 346 268 10;
+#X obj 173 109 phasor~;
+#X obj 219 44 loadbang;
+#X msg 197 85 200;
+#X obj 152 55 r pitch;
+#X obj 165 169 dac~;
+#X connect 0 0 4 0;
+#X connect 0 0 4 1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;

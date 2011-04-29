@@ -1,0 +1,6 @@
+In file included from /Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginProcessor.cpp:28:
+/Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginEditor.h:26:24: error: JuceHeader.h: No such file or directory
+/Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginProcessor.h: In constructor 'JucePdAudioProcessor::JucePdAudioProcessor()':
+/Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginProcessor.h:130: warning: 'JucePdAudioProcessor::fReceivedBuffer' will be initialized after
+/Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginProcessor.h:127: warning:   'size_t JucePdAudioProcessor::fOutBuffSize'
+/Users/russruss/proj/mprog/SoundFXMachine/Builds/MacOSX/../../Source/PluginProcessor.cpp:62: warning:   when initialized here

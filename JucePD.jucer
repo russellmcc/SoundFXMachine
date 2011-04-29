@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vffi7Pg" name="SoundFXMachine" projectType="audioplug" version="1.0.0"
+              juceLinkage="amalg_multi" buildVST="0" buildRTAS="0" buildAU="1"
+              pluginName="GhostFact SoundFX Machine" pluginDesc="GhostFact SoundFX Machine"
+              pluginManufacturer="GhostFact" pluginManufacturerCode="Ghos"
+              pluginCode="Pdfx" pluginChannelConfigs="{0,1},{0,2}" pluginIsSynth="1"
+              pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
+              pluginTailLength="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="JucePDAU"
+              pluginAUViewClass="JucePDAU_V1" pluginRTASCategory="" bundleIdentifier="com.ghostfact.SoundFX"
+              objCSuffix="vffi7Pg" jucerVersion="3.0.0">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+               juceFolder="../../../Downloads/juce"/>
+    <XCODE_IPHONE targetFolder="Builds/iOS" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+                  juceFolder="../../../Downloads/juce"/>
+    <MSVC6 targetFolder="Builds/MSVC6" vstFolder="c:\SDKs\vstsdk2.4" rtasFolder="c:\SDKs\PT_80_SDK"
+           libraryType="1" juceFolder="../../../Downloads/juce"/>
+    <VS2005 targetFolder="Builds/VisualStudio2005" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="../../../Downloads/juce"/>
+    <VS2008 targetFolder="Builds/VisualStudio2008" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="../../../Downloads/juce"/>
+    <VS2010 targetFolder="Builds/VisualStudio2010" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="../../../Downloads/juce"/>
+  </EXPORTFORMATS>
+  <CONFIGURATIONS>
+    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="JucePD"
+                   osxSDK="default" osxCompatibility="default"/>
+    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="JucePD"
+                   osxSDK="default" osxCompatibility="default"/>
+  </CONFIGURATIONS>
+  <MAINGROUP id="jLOQzq" name="SoundFXMachine">
+    <GROUP id="xdRdjKC" name="Source">
+      <FILE id="akMbKal" name="libpd.dylib" compile="0" resource="1" file="Source/libpd.dylib"/>
+      <FILE id="UtyTSiD" name="PD_characteristics.h" compile="0" resource="0"
+            file="Source/PD_characteristics.h"/>
+      <FILE id="1R8W2O" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="0zaugI5" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="eFzbFUv" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="XVVuh4F" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_FORCE_DEBUG="default" JUCE_LOG_ASSERTIONS="default"
+               JUCE_ASIO="default" JUCE_WASAPI="default" JUCE_DIRECTSOUND="default"
+               JUCE_ALSA="default" JUCE_OPENGL="default" JUCE_DIRECT2D="default"
+               JUCE_USE_FLAC="default" JUCE_USE_OGGVORBIS="default" JUCE_USE_CDBURNER="default"
+               JUCE_USE_CDREADER="default" JUCE_USE_CAMERA="default" JUCE_ENABLE_REPAINT_DEBUGGING="default"
+               JUCE_USE_XINERAMA="default" JUCE_USE_XSHM="default" JUCE_USE_XRENDER="default"
+               JUCE_USE_XCURSOR="default" JUCE_PLUGINHOST_VST="default" JUCE_PLUGINHOST_AU="default"
+               JUCE_ONLY_BUILD_CORE_LIBRARY="default" JUCE_WEB_BROWSER="default"
+               JUCE_SUPPORT_CARBON="default" JUCE_CHECK_MEMORY_LEAKS="default"
+               JUCE_CATCH_UNHANDLED_EXCEPTIONS="default"/>
+</JUCERPROJECT>
