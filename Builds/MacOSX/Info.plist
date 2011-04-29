@@ -5,7 +5,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>soundfx</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.ghostfact.SoundFX</string>
 	<key>CFBundleName</key>

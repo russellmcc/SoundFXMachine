@@ -52,6 +52,8 @@
 		F182E02D1D5B599659B1B139 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C628D492831D2AA3291A10D9 /* OpenGL.framework */; };
 		F92B74046EB589227FA7C62F /* AUInputElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBE4FDEBB5BAE0405323AB47 /* AUInputElement.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
 		FAD0832D6F3AB6791E69314E /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6E610B7BBF4F7B5F3A7E31 /* QTKit.framework */; };
+		FF4B2339136A5F6A000EF210 /* soundfx.icns in Resources */ = {isa = PBXBuildFile; fileRef = FF4B2338136A5F6A000EF210 /* soundfx.icns */; };
+		FF4B233A136A5F6A000EF210 /* soundfx.icns in Resources */ = {isa = PBXBuildFile; fileRef = FF4B2338136A5F6A000EF210 /* soundfx.icns */; };
 		FFBFEB1F13403EBC008A3182 /* libpd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B90BAD6C899A5606E941AA6E /* libpd.dylib */; };
 		FFE1523F134824F900D25476 /* PDSubprocess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFE15237134823BF00D25476 /* PDSubprocess.cpp */; };
 		FFE152451348256E00D25476 /* JuceLibraryCode1.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB453D2FEBD8785B3C4D5BBE /* JuceLibraryCode1.mm */; };
@@ -196,6 +198,7 @@
 		FD08CF38022F47523D5194F6 /* AUResources.r */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.rez; name = AUResources.r; path = Extras/CoreAudio/AudioUnits/AUPublic/AUBase/AUResources.r; sourceTree = DEVELOPER_DIR; };
 		FE0172BB54164CF35684790F /* CAAudioChannelLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAAudioChannelLayout.h; path = Extras/CoreAudio/PublicUtility/CAAudioChannelLayout.h; sourceTree = DEVELOPER_DIR; };
 		FF2C56BC80F8DEAD46479F3B /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = Extras/CoreAudio/PublicUtility/CAStreamBasicDescription.cpp; sourceTree = DEVELOPER_DIR; };
+		FF4B2338136A5F6A000EF210 /* soundfx.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = soundfx.icns; path = ../../Source/soundfx.icns; sourceTree = SOURCE_ROOT; };
 		FFE15236134823BF00D25476 /* PDSubprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDSubprocess.h; path = ../../Source/PDSubprocess.h; sourceTree = SOURCE_ROOT; };
 		FFE15237134823BF00D25476 /* PDSubprocess.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = PDSubprocess.cpp; path = ../../Source/PDSubprocess.cpp; sourceTree = SOURCE_ROOT; };
 		FFE1523B134824C400D25476 /* PDSubProcess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PDSubProcess; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +297,7 @@
 		41DC4806AA6FCD6542FA0234 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF4B2338136A5F6A000EF210 /* soundfx.icns */,
 				4BDC5E459F2394D3561998B1 /* Info.plist */,
 				FFF44CEF136924940008CC3D /* SoundFXMachineStandalone-Info.plist */,
 			);
@@ -529,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4B2339136A5F6A000EF210 /* soundfx.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4B233A136A5F6A000EF210 /* soundfx.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +580,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp $CONFIGURATION_BUILD_DIR/../../../../Source/*.dylib $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\ncp $CONFIGURATION_BUILD_DIR/../../../../Source/*.pd $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\ncp $CONFIGURATION_BUILD_DIR/PDSubProcess $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\ncp -R $CONFIGURATION_BUILD_DIR/../../../../Externals/* $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\n";
+			shellScript = "cp $CONFIGURATION_BUILD_DIR/../../../../Source/*.dylib $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\ncp $CONFIGURATION_BUILD_DIR/../../../../Source/*.pd $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\ncp -R $CONFIGURATION_BUILD_DIR/../../../../Externals/* $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/MacOS/\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
